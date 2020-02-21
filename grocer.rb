@@ -44,6 +44,7 @@ cart_item_w_coupon = find_item_by_name_in_collection(couponed_item, cart)
     if cart_item_w_coupon
       cart_item_w_coupon[:count] += coupons[i][:num]
       
+      
     end 
     
   end 
