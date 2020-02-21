@@ -16,17 +16,10 @@ def consolidate_cart(cart)
   
   con_cart = []
   i = 0 #cart counter
-  while i < cart.length do 
-    x = 0 #con_cart counter
-    while x < con_cart.length do 
-      if cart[i][:item] == con_cart[x][:item]
-      con_cart[x][:counter] +=1
-      else 
-      con_cart << cart[i]
-      end 
-    x+=1
-    end 
-    i+=1 
+  while i < cart.length 
+  new_item = find_item_by_name_in_collection(con_cart[])
+  
+  i+=1 
   end 
   con_cart 
 end
