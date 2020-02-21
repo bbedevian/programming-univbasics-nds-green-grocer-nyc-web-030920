@@ -83,6 +83,6 @@ i+=1
 end 
 if total > 100 
   total = total*0.90
-  total 
 end 
+total 
 end
