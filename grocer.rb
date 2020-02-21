@@ -14,13 +14,20 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   con_cart = []
-  i = 0 
+  i = 0 #cart counter
   while i < cart.length do 
-    if con_cart[i][:item] 
-      con_cart << 
+    x = 0 #con_cart counter
+    while x < con_cart.length do 
+      if cart[i][:item] == con_cart[x][:item]
+      con_cart[x][:counter] +=1
+      else 
+      con_cart << cart[i]
+      end 
+    x+=1
     end 
     i+=1 
   end 
+  con_cart 
 end
 
 def apply_coupons(cart, coupons)
