@@ -35,10 +35,16 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-cart = consolidate_cart(cart)
+  binding.pry 
+new_cart = consolidate_cart(cart)
 i = 0 
-while i < cart.length 
-
+while i < new_cart.length 
+item_check = find_item_by_name_in_collection(new_cart[i][:item], coupons)
+  if item_check 
+    new_cart[i][:count]
+  end 
+i+=1 
+end 
 end
 
 def apply_clearance(cart)
