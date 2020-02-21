@@ -1,5 +1,4 @@
 def find_item_by_name_in_collection(name, collection)
-  binding.pry 
   i = 0 
   while i < collection.length do 
   if name == collection[i][:item] 
