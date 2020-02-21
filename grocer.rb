@@ -47,7 +47,7 @@ cart_item_w_coupon = find_item_by_name_in_collection(couponed_item, cart)
     else 
       cart_item_w_coupon {
         :item => couponed_item
-        :price => coupons[i][:price]
+        :price => coupons[i][:cost]/coupons[i][:num],
       }
       
     end 
