@@ -51,7 +51,7 @@ cart_item_w_coupon = find_item_by_name_in_collection(couponed_item, cart)
         :count => coupons[i][:num],
         :clearance => cart_item[:clearance]
       }
-      
+      cart << cart_item_w_coupon
     end 
     
   end 
