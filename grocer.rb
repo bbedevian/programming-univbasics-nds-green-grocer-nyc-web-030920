@@ -82,5 +82,6 @@ total += final_cart[i][:price]*final_cart[i][:count]
 i+=1 
 end 
 if total > 100 
-  total = total*
+  total = total*0.90
+  total 
 end
