@@ -35,13 +35,11 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  binding.pry 
-new_cart = consolidate_cart(cart)
 i = 0 
-while i < new_cart.length 
-item_check = find_item_by_name_in_collection(new_cart[i][:item], coupons)
-  if item_check && coupons[:num] <= new_cart[i][:count]
-    item_w_coup = new_cart[i][:count]/coupons[:num]
+while i < cart.length 
+item_check = find_item_by_name_in_collection(cart[i][:item], coupons)
+  if item_check && coupons[:num] <= cart[i][:count]
+    item_w_coup = cart[i][:count]/coupons[:num]
     
   end 
 i+=1 
