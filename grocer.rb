@@ -81,5 +81,6 @@ while i < final_cart.length
 total += final_cart[i][:price]*final_cart[i][:count]
 i+=1 
 end 
-if total >
+if total > 100 
+  total = total*
 end
