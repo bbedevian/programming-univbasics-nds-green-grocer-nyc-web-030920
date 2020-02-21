@@ -63,7 +63,7 @@ end
 def apply_clearance(cart)
  i = 0 
  while i < cart.length 
- if cart[i][:clearance] == "true" 
+ if cart[i][:clearance] == true 
    cart[i][:price] = (cart[i][:price]*(8/10))
  end 
  i+=1 
