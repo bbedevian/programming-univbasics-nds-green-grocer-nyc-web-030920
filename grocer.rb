@@ -40,7 +40,7 @@ new_cart = consolidate_cart(cart)
 i = 0 
 while i < new_cart.length 
 item_check = find_item_by_name_in_collection(new_cart[i][:item], coupons)
-  if item_check && coupons[:num]
+  if item_check && coupons[:num] <= 
     new_cart[i][:count]
   end 
 i+=1 
