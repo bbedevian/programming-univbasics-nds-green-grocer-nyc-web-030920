@@ -40,7 +40,7 @@ while i < coupons.length
 item_check = find_item_by_name_in_collection(coupons[i][:item], cart)
 coupon_item = "#{coupons[i][:item]} W/COUPON"
 cart_item_w_coupon = find_item_by_name_in_collection(coupon_item, cart)
-  if item_check && coupons[i][:num] >= car[:count]
+  if item_check && coupons[i][:num] >= item_check[:count]
     item_w_coup = cart[i][:count]/coupons[:num]
     
   end 
