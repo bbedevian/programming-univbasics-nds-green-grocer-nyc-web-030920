@@ -5,9 +5,9 @@ def find_item_by_name_in_collection(name, collection)
   i = 0 
   while i < collection.length do 
   if name == collection[i][:item] 
-    return collection[i]
+   collection[i]
   else 
-    return nil 
+   nil 
   end 
   i+=1 
   end 
